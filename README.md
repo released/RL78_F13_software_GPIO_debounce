@@ -3,7 +3,7 @@
 
 udpate @ 2024/07/30
 
-1. initial G16 EVB , to test below function 
+1. initial below pin define to function 
 
 - UART : P15:TXD0, P16:RXD0
 
