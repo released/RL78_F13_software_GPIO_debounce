@@ -44,9 +44,50 @@ volatile unsigned int btn_counter_tick = 0;
 
 #define BTN_PRESSED_LONG                                (2500)
 
-#define DEBOUNCE_INTERVAL_TIME                          (10) 
-#define DEBOUNCE_SHORT_TIME                             (80)            //Press and release button settling time ( ms )
+
+/*
+    interval : 10 ms
+    shift 8 times = 10 ms*8
+
+    target :
+    8*2 = 16 ms
+    8*4 = 32 ms
+    8*6 = 48 ms
+    8*8 = 64 ms
+    8*10 = 80 ms
+*/
+
+// #define USE_DEBOUNCE_16MS
+// #define USE_DEBOUNCE_32MS
+// #define USE_DEBOUNCE_48MS
+// #define USE_DEBOUNCE_64MS
+#define USE_DEBOUNCE_80MS
+
+#if defined (USE_DEBOUNCE_16MS)
+#define DEBOUNCE_INTERVAL_TIME                          (2)  
+#define DEBOUNCE_SHORT_TIME                             (DEBOUNCE_INTERVAL_TIME*8)      //Press and release button settling time ( ms )
+
+#elif defined (USE_DEBOUNCE_32MS)
+#define DEBOUNCE_INTERVAL_TIME                          (4)  
+#define DEBOUNCE_SHORT_TIME                             (DEBOUNCE_INTERVAL_TIME*8)      //Press and release button settling time ( ms )
+
+#elif defined (USE_DEBOUNCE_48MS)
+#define DEBOUNCE_INTERVAL_TIME                          (6)  
+#define DEBOUNCE_SHORT_TIME                             (DEBOUNCE_INTERVAL_TIME*8)      //Press and release button settling time ( ms )
+
+#elif defined (USE_DEBOUNCE_64MS)
+#define DEBOUNCE_INTERVAL_TIME                          (8)  
+#define DEBOUNCE_SHORT_TIME                             (DEBOUNCE_INTERVAL_TIME*8)      //Press and release button settling time ( ms )
+
+#elif defined (USE_DEBOUNCE_80MS)
+#define DEBOUNCE_INTERVAL_TIME                          (10)  
+#define DEBOUNCE_SHORT_TIME                             (DEBOUNCE_INTERVAL_TIME*8)      //Press and release button settling time ( ms )
+
+#endif
+
 #define DEBOUNCE_LONG_TIME                              (1500)          //Press and release button settling time ( ms )
+#define DEBOUNCE_SHIFT_BITS                             (0xFF)
+
 
 typedef struct BtnEvent_t
 {
@@ -156,7 +197,7 @@ void btnX_Debounce(BTN_IDX_t idx,unsigned char IOState)
         event_btn[idx].ButtonDebounceState |= 1 << event_btn[idx].ButtonBitShift;
 
         // printf("0x%02X,%d\r\n",event_btn[idx].ButtonDebounceState,event_btn[idx].ButtonBitShift);
-        if (event_btn[idx].ButtonDebounceState == 0xFF)
+        if (event_btn[idx].ButtonDebounceState == DEBOUNCE_SHIFT_BITS)
         {
             event_btn[idx].ButtonShortPressed = PRESSED;
             event_btn[idx].ButtonDebounceState = 0;
@@ -194,6 +235,8 @@ void btn8_timer_irq(void)
         FLAG_BTN_8_SHORT_PRESSED = 0;
         FLAG_BTN_8_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_8);
+        
+        event_btn[BTN_IDX_8].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -225,6 +268,8 @@ void btn7_timer_irq(void)
         FLAG_BTN_7_SHORT_PRESSED = 0;
         FLAG_BTN_7_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_7);
+        
+        event_btn[BTN_IDX_7].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -256,6 +301,8 @@ void btn6_timer_irq(void)
         FLAG_BTN_6_SHORT_PRESSED = 0;
         FLAG_BTN_6_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_6);
+        
+        event_btn[BTN_IDX_6].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -287,6 +334,8 @@ void btn5_timer_irq(void)
         FLAG_BTN_5_SHORT_PRESSED = 0;
         FLAG_BTN_5_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_5);
+        
+        event_btn[BTN_IDX_5].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -318,6 +367,8 @@ void btn4_timer_irq(void)
         FLAG_BTN_4_SHORT_PRESSED = 0;
         FLAG_BTN_4_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_4);
+        
+        event_btn[BTN_IDX_4].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -349,6 +400,8 @@ void btn3_timer_irq(void)
         FLAG_BTN_3_SHORT_PRESSED = 0;
         FLAG_BTN_3_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_3);
+        
+        event_btn[BTN_IDX_3].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -380,6 +433,8 @@ void btn2_timer_irq(void)
         FLAG_BTN_2_SHORT_PRESSED = 0;
         FLAG_BTN_2_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_2);
+        
+        event_btn[BTN_IDX_2].ButtonState = ACTIVE_LOW; //target state
     }
 }
 
@@ -411,6 +466,8 @@ void btn1_timer_irq(void)
         FLAG_BTN_1_SHORT_PRESSED = 0;
         FLAG_BTN_1_LONG_PRESSED = 0;
         btnX_init(BTN_IDX_1);
+        
+        event_btn[BTN_IDX_1].ButtonState = ACTIVE_LOW; //target state
     }
 }
 

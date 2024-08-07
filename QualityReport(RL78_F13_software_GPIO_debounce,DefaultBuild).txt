@@ -1,31 +1,43 @@
 QualityReport
-2024年7月30日 上午 09:17:00
+2024年8月7日 下午 07:07:01
 
 ------ Start build(RL78_F13_software_GPIO_debounce, DefaultBuild) ------
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\lbgrl.exe -cpu=S3 -output=DefaultBuild\RL78_F13_software_GPIO_debounce.lib -lang=c99 -head=all -Onothing -nologo -MAKEUD_LBG=DefaultBuild\RL78_F13_software_GPIO_debounce.lbg.ud
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_systeminit.c -cpu=S3 -o DefaultBuild\r_systeminit.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_6713f01723cd44a2ba2c4367ed76b82cy2ndsbcs.ioe -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_main.c -cpu=S3 -o DefaultBuild\r_main.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_067476c1fedc4fb28901c306f5820237tiforvox.k3r -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe custom_func.c -cpu=S3 -o DefaultBuild\custom_func.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_3ac7377dd8fa436fbacf8d09cb3e695cy5ehrfva.pyv -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe misc_config.c -cpu=S3 -o DefaultBuild\misc_config.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_48beb485955844f6bf7bae8f3679db2egqqq45pa.rvy -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_cgc.c -cpu=S3 -o DefaultBuild\r_cg_cgc.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_10218553c8a34814b3abe533ab1c8109e3a44m2c.tvs -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_cgc_user.c -cpu=S3 -o DefaultBuild\r_cg_cgc_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_807615c1973048428b8b476fd2d35d6fp1imbqnx.tp2 -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_port.c -cpu=S3 -o DefaultBuild\r_cg_port.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_fa18bde418ef4eac8124a9690693a3035zusuric.pzc -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_port_user.c -cpu=S3 -o DefaultBuild\r_cg_port_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_e4664506b1514d71a6f9e9cc68900011cabuftj5.fdc -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_serial.c -cpu=S3 -o DefaultBuild\r_cg_serial.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_ebbbf30da33c4c38b0538a261cd27d12cgejqdj1.pop -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_serial_user.c -cpu=S3 -o DefaultBuild\r_cg_serial_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_d3d7d7c3814d4af5baed6789c045c8003wfuuk02.sv0 -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_timer.c -cpu=S3 -o DefaultBuild\r_cg_timer.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_8d5848979bcc4cb0932dc99318911f8f2a1izrlm.2wp -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_timer_user.c -cpu=S3 -o DefaultBuild\r_cg_timer_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_8166fd82f4e64a72a050f50e591b6523f1uqhige.fgy -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_main.c -cpu=S3 -o DefaultBuild\r_main.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_f556322a5e994140ac967e3ff7eab98f4oupudqi.f4o -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_systeminit.c -cpu=S3 -o DefaultBuild\r_systeminit.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_d383ceb0b20f41ada7be519eba6c752afhw5ji1e.kw4 -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe custom_func.c -cpu=S3 -o DefaultBuild\custom_func.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_7c158eb902ee420da1202bcc554cb9fcg02azt4j.crw -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe misc_config.c -cpu=S3 -o DefaultBuild\misc_config.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_6cacaf3340f2494eb22a47d25b272aa7fgeb4ucf.x0b -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_cgc.c -cpu=S3 -o DefaultBuild\r_cg_cgc.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_7116a667ac974b3e87938c38a2cda5881aq4jzh4.czy -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_cgc_user.c -cpu=S3 -o DefaultBuild\r_cg_cgc_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_e935b48bb98547469813ff5dce3854acodgjyzlo.yzy -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_port.c -cpu=S3 -o DefaultBuild\r_cg_port.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_ad0536af904c44f5b450172c9fa87f73flpyurb0.jia -msg_lang=english
+Compiling start
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_port_user.c -cpu=S3 -o DefaultBuild\r_cg_port_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_51b5f09a15b84026979f8d72a966168aiqstqwol.c54 -msg_lang=english
+Ctype compiling
+Math compiling
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_serial.c -cpu=S3 -o DefaultBuild\r_cg_serial.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_e7f6fed83da246f0934950d4660ac67dyovc52am.uc2 -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_serial_user.c -cpu=S3 -o DefaultBuild\r_cg_serial_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_2f9fb1c4ef2841c78db443e1883e2b85jrr1p44f.vtg -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_timer.c -cpu=S3 -o DefaultBuild\r_cg_timer.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_cd792d4fe5ec48eba1718617f64672aen1ul4laz.plf -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe src\code_gen\r_cg_timer_user.c -cpu=S3 -o DefaultBuild\r_cg_timer_user.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -g_line -Onothing -I src\code_gen -I .\ -I . -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_15f97a8a1cb64befb77b9f74805ec1fe2wfgyxqs.fjc -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe cstart.asm -cpu=S3 -o DefaultBuild\cstart.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_407f88030da843a4b520800f9d4771e7fxpx4pbl.yqk -msg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe stkinit.asm -cpu=S3 -o DefaultBuild\stkinit.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_f597cf9fc2134d1f809329ceeb0f62bffgjj2giz.4hw -msg_lang=english
+Mathf compiling
+Stdio compiling
+Stdlib compiling
+String compiling
+Inttypes compiling
+Runtime compiling
+Linking start
+W0561017:Paid license of CC-RL V1 is not found, and the evaluation period has expired. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
 Library Generator Completed
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe cstart.asm -cpu=S3 -o DefaultBuild\cstart.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_2ae982785dd0413eb7ec5448bf836d59cctzetpi.erc -msg_lang=english
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe stkinit.asm -cpu=S3 -o DefaultBuild\stkinit.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR5F10BMG.DVF" -g -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_22e189cf838447ddab8ac4db84eab646o4ny4rb3.aud -msg_lang=english
 C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -MAKEUD=DefaultBuild\RL78_F13_software_GPIO_debounce.lk.ud -subcommand=DefaultBuild\RL78_F13_software_GPIO_debounce.clnk
 W0561017:Paid license of CC-RL V1 is not found, and the evaluation period has expired. Please consider purchasing the product.
 RAMDATA SECTION:  000000ea Byte(s)
 ROMDATA SECTION:  00000468 Byte(s)
-PROGRAM SECTION:  0000438b Byte(s)
+PROGRAM SECTION:  000043a3 Byte(s)
 W0561017:Paid license of CC-RL V1 is not found, and the evaluation period has expired. Please consider purchasing the product.
 Renesas Optimizing Linker Completed
------- Build ended(Error:0, Warning:2)(RL78_F13_software_GPIO_debounce, DefaultBuild) ------
+------ Build ended(Error:0, Warning:3)(RL78_F13_software_GPIO_debounce, DefaultBuild) ------
 
 --- CommandFile 1 ---
 DefaultBuild\RL78_F13_software_GPIO_debounce.clnk :
@@ -72,8 +84,8 @@ DefaultBuild\RL78_F13_software_GPIO_debounce.clnk :
 
 
 --- SHA1 hash value of output files ---
-D:\SourceCode\_Avery_Renesas\CS+\RL78_F13_software_GPIO_debounce\DefaultBuild\RL78_F13_software_GPIO_debounce.abs: aba67096d83b8ffa308b7a7bc6e71bc9774592ac
-D:\SourceCode\_Avery_Renesas\CS+\RL78_F13_software_GPIO_debounce\DefaultBuild\RL78_F13_software_GPIO_debounce.mot: 37c1935f68469f5b559f39fdf1c3db7b95e9908a
+D:\SourceCode\_Avery_Renesas\CS+\RL78_F13_software_GPIO_debounce\DefaultBuild\RL78_F13_software_GPIO_debounce.abs: 694e14d9d81237b41c7ad81a8c4f2e91aff4f44c
+D:\SourceCode\_Avery_Renesas\CS+\RL78_F13_software_GPIO_debounce\DefaultBuild\RL78_F13_software_GPIO_debounce.mot: 5e1489392e583c22c2e7b45498cd1f8c057121ea
 
 
 --- System Information ---
@@ -101,13 +113,13 @@ D:\SourceCode\_Avery_Renesas\CS+\RL78_F13_software_GPIO_debounce\DefaultBuild\RL
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *Memory Usage
  *Private Working Set
-  199 MB
+  192 MB
  *Number of GDI Objects
-  2242
+  2272
  *Number of USER Objects
-  1206
+  1228
  *Opened Files
-  2 editors, 2 files, 21 KB
+  2 editors, 2 files, 23 KB
 
 --- Build Tool Plug-in Information ---
 RH850 Build tool CC-RH Plug-in

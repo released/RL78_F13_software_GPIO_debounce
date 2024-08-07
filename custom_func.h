@@ -5,6 +5,14 @@
 #define bool  _Bool
 /*_____ D E F I N I T I O N S ______________________________________________*/
 
+#ifndef ACTIVE_LOW
+#define ACTIVE_LOW              					    (0)
+#endif
+
+#ifndef ACTIVE_HIGH
+#define ACTIVE_HIGH              					    (1)
+#endif
+
 #ifndef HIGH
 #define HIGH              					            (1)
 #endif
